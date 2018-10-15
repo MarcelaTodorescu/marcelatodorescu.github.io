@@ -32,8 +32,8 @@ function rezolvare(coeficienti)
 
 function afisare(solutii)
 {
-	document.getElementById("id_x1").innerHTML = x1_re + "+" + x1_im + "i";
-	document.getElementById("id_x2").innerHTML = x2_re + "+" + x2_im + "i";
+	document.getElementById("id_x1").innerHTML = solutii.x1_re + "+" + solutii.x1_im + "i";
+	document.getElementById("id_x2").innerHTML = solutii.x2_re + "+" + solutii.x2_im + "i";
 }
 
 function rezolva()
