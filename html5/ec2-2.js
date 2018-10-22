@@ -33,8 +33,8 @@ function t_ec2()
 
 	this.afisare = function()
 	{
-		document.getElementById("id_x1").innerHTML = this.x1_re + "+" + this.x1_im + "i";
-		document.getElementById("id_x2").innerHTML = this.x2_re + "+" + this.x2_im + "i";
+		document.getElementById("id_x1").innerHTML = this.x1.re + "+" + this.x1.im + "i";
+		document.getElementById("id_x2").innerHTML = this.x2.re + "+" + this.x2.im + "i";
 	}
 }
 function rezolva()
