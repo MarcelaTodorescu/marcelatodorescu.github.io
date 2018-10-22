@@ -37,6 +37,7 @@ function t_ec2()
 		document.getElementById("id_x2").innerHTML = this.x2.re + "+" + this.x2.im + "i";
 	}
 }
+
 function rezolva()
 {
 	var ec2 = new t_ec2();
