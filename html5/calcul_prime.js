@@ -1,4 +1,5 @@
 var stopped = false;
+
 onmessage = function (e) {
 	if (e.data == "stop"){
 		stopped = true;
@@ -12,7 +13,7 @@ function is_prim(n)
 	return true;
 }
 
-function calculeaza_prime(start)
+function calculeaza_prime(start_value)
 {
 	if (stopped)
 				;
