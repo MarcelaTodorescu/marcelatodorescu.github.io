@@ -1,7 +1,7 @@
 document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.11.05.1";
 
 window.addEventListener("deviceorientation", on_device_orientation);
-window.addEventListener("deviceomotion", on_device_motion);
+window.addEventListener("devicemotion", on_device_motion);
 
 //------------------------------------------------------
 function on_device_orientation(e)
