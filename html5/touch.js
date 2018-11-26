@@ -1,11 +1,11 @@
-document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.11.26.4";
+document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.11.26.5";
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch_start);
 canvas.addEventListener("touchmove", on_touch_move);
 
 var canvas_bounding_rect = canvas.getBoundingClientRect();
-var last_pos = {x: 0, y: 0);
+var last_pos = {x: 0, y: 0};
 
 
 function on_touch_start(e)
@@ -32,5 +32,7 @@ function on_touch_move(e)
 		
 		context.arc(e.changedTouches[i].pageX - canvas_bounding_rect.left, e.changedTouches[i].pageY - canvas_bounding_rect.top, 10, 0, 2*Math.PI);
 		context.stroke();
+		last_pos.x = e.changedTouches.pageX;
+		last_pos.y = e.changedTouches.pageY;
 	}
 }
