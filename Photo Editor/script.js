@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 	function changeSlider(e) {
 		Caman("#image",function renderCaman() {    /*canvas al imaginii */
 			this.revert(false); /*comentat daca vrem mai multe slide-uri in acelasi timp */ 
-			this[e.target.name](e.target.value).render();  
+			this[e.target.name](e.target.value).render(function(){
+				if(textInput.value){
+					applyText;
+				};
+			});  
 			/*aplica efectul bazat pe ce alegem de pe slider. e.target.name ia numele slider-ului pe care actionam. e.target.value ia valoarea (ex: schimbam brightness) .render aplica efectul . in html la input avem si name si value */
 		});
 	};
@@ -48,7 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 		Caman('#image', function(){
 			/* curatam filtre puse inainte */
 			this.revert(false); /*comentam daca vrem filtre suprapuse */
-			this[e.target.id]().render();
+			this[e.target.id]().render(
+			function(){
+				if(textInput.value){
+					applyText;
+				};
+			});
 		});
 	};
 	
@@ -62,8 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 	function save(e){
 		Caman('#image', function(){
 			this.render(function(){
-				this.save('image.png');
-			});
+					applyText();
+					this.save('image.png');
+				});
 		});
 	};
 	
