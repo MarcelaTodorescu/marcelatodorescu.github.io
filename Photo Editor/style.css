@@ -22,9 +22,10 @@ p {
 	text-align: left;
 }
 .img {                     
-	width: 65%;               /* x% din pagina */
+	width: 50%;               /* x% din pagina */
 	padding-left: 10px;
 	height: auto;
+	border: 5px solid #FFD700;
 }
 button {                      /*toate butoanele fara choose file*/
 	color: black;
@@ -34,4 +35,13 @@ button {                      /*toate butoanele fara choose file*/
 	border: 2px solid white;
 	padding: 4px;
 	margin-top: 2px;
+}
+input[type="file"] {      /* blocul de choose file */
+	color: black;
+	background: #FFD700; 
+	font-family: sans-serif;
+	border-radius: 2%;
+	border: 2px solid white;
+	padding: 10px;
+	margin: 5px;
 }
