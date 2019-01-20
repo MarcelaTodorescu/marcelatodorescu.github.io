@@ -20,3 +20,17 @@ p {
 	width: 30%;
 	text-align: left;
 }
+.img {                     
+	width: 65%;               /* x% din pagina */
+	padding-left: 10px;
+	height: auto;
+}
+button {                      /*toate butoanele fara choose file*/
+	color: black;
+	background: #FFD700;
+	font-family: sans-serif;
+	border-radius: 10%;
+	border: 2px solid white;
+	padding: 4px;
+	margin-top: 2px;
+}
