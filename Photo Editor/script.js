@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 		var imageFile = e.target.files[0];    /* ia primul fisier */
 		var imageElement = document.getElementById('image');
 		imageElement.setAttribute('src', URL.createObjectURL(imageFile));   /*setam fisierul ales */
+		Caman("#image",function(){
+			this.revert(true);
+		});
 	};
 	loadImage.onchange = loadInput;
 	
@@ -65,5 +68,24 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 	};
 	
 	saveButton.onclick = save;
+	
+	
+	/* aplicare text*/
+	var textInput = document.getElementById("message");
+	function applyText() {
+		var canvas = document.getElementById('image');
+		var ctx = canvas.getContext('2d');
+		ctx.fillStyle = "rgba(0,0,0,0.5)";  /*transparenta */
+		var boxTop = (canvas.height/2)-30;
+		ctx.fillRect(0,boxTop, canvas.width, 65);
+		ctx.font = "50px Raleway";
+		ctx.fillStyle = 'white';
+		ctx.textAlign = 'center';
+		ctx.fillText(textInput.value, canvas.width/2, boxTop+50);
+		
+	};
+	var submitText = document.getElementById('submit');
+	submitText.onclick = applyText;
+	
 	
 }, false);
