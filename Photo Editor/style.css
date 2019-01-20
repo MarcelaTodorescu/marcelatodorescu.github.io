@@ -45,3 +45,9 @@ input[type="file"] {      /* blocul de choose file */
 	padding: 10px;
 	margin: 5px;
 }
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	margin: 15px;
+	color: #FFD700;
+}
