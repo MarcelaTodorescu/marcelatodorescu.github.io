@@ -18,11 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 		});
 	};
 	
-	/*cream o variabila care stocheaza toate slider-ele, toate avand type=range */
+	/*cream o variabila lista care stocheaza toate slider-ele, toate avand type=range */
 	var ranges = document.querySelectorAll('input[type="range"]');
+	/* bucla aplica efectele din slider cand acesta este mutat */
 	ranges.forEach(function(range){
 		range.onchange = changeSlider;
 	});
+	
+	/* buton reset */
+	var resetButton = document.getElementById("reset");
+	function reset(e) {
+		/* reseteaza efectele la 0 */
+		ranges.forEach(function(range){
+			range.value = 0;
+		});
+		/* resetam canvasul la forma initiala */
+		Caman("#image", function(){
+			this.revert(true);
+	});
+		
+	};
+	resetButton.onclick = reset;
+	
 	
 	
 }, false);
