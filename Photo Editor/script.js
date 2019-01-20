@@ -9,7 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 	};
 	loadImage.onchange = loadInput;
 	
+	/* aplicare efecte slider  */
+	function changeSlider(e) {
+		Caman("#image",function renderCaman() {    /*canvas al imaginii */
+			this.revert(false);  
+			this[e.target.name](e.target.value).render();  
+			/*aplica efectul bazat pe ce alegem de pe slider. e.target.name ia numele slider-ului pe care actionam. e.target.value ia valoarea (ex: schimbam brightness) .render aplica efectul . in html la input avem si name si value */
+		});
+	};
 	
+	/*cream o variabila care stocheaza toate slider-ele, toate avand type=range */
+	var ranges = document.querySelectorAll('input[type="range"]');
+	ranges.forEach(function(range){
+		range.onchange = changeSlider;
+	});
 	
 	
 }, false);
