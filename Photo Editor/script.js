@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 	/* aplicare efecte slider  */
 	function changeSlider(e) {
 		Caman("#image",function renderCaman() {    /*canvas al imaginii */
-			this.revert(false);  
+			this.revert(false); /*comentat daca vrem mai multe slide-uri in acelasi timp */ 
 			this[e.target.name](e.target.value).render();  
 			/*aplica efectul bazat pe ce alegem de pe slider. e.target.name ia numele slider-ului pe care actionam. e.target.value ia valoarea (ex: schimbam brightness) .render aplica efectul . in html la input avem si name si value */
 		});
@@ -39,6 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 		
 	};
 	resetButton.onclick = reset;
+	
+	/* butoane filtre */
+	function filterButtonHandler(e) {
+		Caman('#image', function(){
+			/* curatam filtre puse inainte */
+			this.revert(false); /*comentam daca vrem filtre suprapuse */
+			this[e.target.id]().render();
+		});
+	};
+	
+	var filterButtons = document.querySelectorAll('.filter');
+	filterButtons.forEach(function(filterButton){
+		filterButton.onclick = filterButtonHandler;
+	});
 	
 	
 	
