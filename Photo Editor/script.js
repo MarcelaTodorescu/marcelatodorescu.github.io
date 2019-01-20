@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', function() {     /* nicio function
 		filterButton.onclick = filterButtonHandler;
 	});
 	
+	/*buton save */
+	var saveButton = document.getElementById('save');
+	function save(e){
+		Caman('#image', function(){
+			this.render(function(){
+				this.save('image.png');
+			});
+		});
+	};
 	
+	saveButton.onclick = save;
 	
 }, false);
