@@ -8,7 +8,7 @@ h1{
 	padding: 5px;
 	height: auto;
 }
-input[type="file"] {      /* blocul de choose file */
+input[type="file"] {
 	color: white;
 	background: black; 
 	border-radius: 2%;
