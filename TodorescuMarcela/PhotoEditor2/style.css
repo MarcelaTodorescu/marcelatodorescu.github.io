@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+	letter-spacing: 3px;
+	color: white;
+}
+.image {                     
+	width: 30%;
+	padding: 5px;
+	height: auto;
+}
+input[type="file"] {      /* blocul de choose file */
+	color: white;
+	background: black; 
+	border-radius: 2%;
+	padding: 5px;
+	margin: 2px;
+}
