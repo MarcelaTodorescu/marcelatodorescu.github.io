@@ -11,3 +11,7 @@ function greyFunction()
 {
     document.getElementById('img').setAttribute("class", "styleGrey");
 }
+function resetFunction()
+{
+    document.getElementById('img').setAttribute("class", "reset");
+}

@@ -37,3 +37,10 @@ h3{
 	padding: 5px;
 	height: auto;
 }
+.reset{
+    -webkit-filter: initial(100%);
+    filter: initial(100%);
+	width: 30%;
+	padding: 5px;
+	height: auto;
+}
