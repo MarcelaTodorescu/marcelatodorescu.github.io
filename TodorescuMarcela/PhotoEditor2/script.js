@@ -32,3 +32,11 @@ function invertFunction()
 {
     document.getElementById('img').setAttribute("class", "styleInvert");
 }
+function opacityFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleOpacity");
+}
+function sepiaFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleSepia");
+}
