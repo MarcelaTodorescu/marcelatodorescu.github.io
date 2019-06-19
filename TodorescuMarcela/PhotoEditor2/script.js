@@ -15,3 +15,7 @@ function resetFunction()
 {
     document.getElementById('img').setAttribute("class", "reset");
 }
+function blurFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleBlur");
+}

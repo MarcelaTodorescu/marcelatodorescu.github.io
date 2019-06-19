@@ -44,3 +44,10 @@ h3{
 	padding: 5px;
 	height: auto;
 }
+.styleBlur{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+	width: 30%;
+	padding: 5px;
+	height: auto;
+}
