@@ -6,3 +6,8 @@ window.addEventListener('load', function() {
 	  }
   });
 });
+
+function greyFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleGrey");
+}

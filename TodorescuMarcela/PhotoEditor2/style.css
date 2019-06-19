@@ -15,3 +15,25 @@ input[type="file"] {
 	padding: 5px;
 	margin: 2px;
 }
+.button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+h3{
+	text-align: left;
+	letter-spacing: 3px;
+	color: white;
+}
+.styleGrey{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+	width: 30%;
+	padding: 5px;
+	height: auto;
+}
