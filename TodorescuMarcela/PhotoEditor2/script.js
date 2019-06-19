@@ -4,6 +4,7 @@ window.addEventListener('load', function() {
           var img = document.querySelector('img');
           img.src = URL.createObjectURL(this.files[0]);
 	  }
+    resetFunction();
   });
 });
 
