@@ -65,3 +65,10 @@ h3{
 	padding: 5px;
 	height: auto;
 }
+.styleInvert{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+	width: 30%;
+	padding: 5px;
+	height: auto;
+}

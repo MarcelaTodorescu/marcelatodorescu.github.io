@@ -28,3 +28,7 @@ function contrastFunction()
 {
     document.getElementById('img').setAttribute("class", "styleContrast");
 }
+function invertFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleInvert");
+}
