@@ -20,3 +20,7 @@ function blurFunction()
 {
     document.getElementById('img').setAttribute("class", "styleBlur");
 }
+function brightnessFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleBrightness");
+}
