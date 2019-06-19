@@ -24,3 +24,7 @@ function brightnessFunction()
 {
     document.getElementById('img').setAttribute("class", "styleBrightness");
 }
+function contrastFunction()
+{
+    document.getElementById('img').setAttribute("class", "styleContrast");
+}
