@@ -92,3 +92,7 @@ p{
 .timer{
 	color: white;
 }
+.rotateRight{
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}

@@ -19,35 +19,30 @@ window.addEventListener('load', function() {
   });
 });
 
-function greyFunction()
-{
+function greyFunction() {
     document.getElementById('img').setAttribute("class", "styleGrey");
 }
-function resetFunction()
-{
+function resetFunction() {
     document.getElementById('img').setAttribute("class", "reset");
 }
-function blurFunction()
-{
+function blurFunction() {
     document.getElementById('img').setAttribute("class", "styleBlur");
 }
-function brightnessFunction()
-{
+function brightnessFunction() {
     document.getElementById('img').setAttribute("class", "styleBrightness");
 }
-function contrastFunction()
-{
+function contrastFunction() {
     document.getElementById('img').setAttribute("class", "styleContrast");
 }
-function invertFunction()
-{
+function invertFunction() {
     document.getElementById('img').setAttribute("class", "styleInvert");
 }
-function opacityFunction()
-{
+function opacityFunction() {
     document.getElementById('img').setAttribute("class", "styleOpacity");
 }
-function sepiaFunction()
-{
+function sepiaFunction() {
     document.getElementById('img').setAttribute("class", "styleSepia");
+}
+function rotateRightFunction() {
+	document.getElementById('img').setAttribute("class","rotateRight");
 }
