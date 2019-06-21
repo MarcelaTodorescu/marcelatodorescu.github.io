@@ -46,3 +46,6 @@ function sepiaFunction() {
 function rotateRightFunction() {
 	document.getElementById('img').setAttribute("class","rotateRight");
 }
+function rotateLeftFunction() {
+	document.getElementById('img').setAttribute("class","rotateLeft");
+}
